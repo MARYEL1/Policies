@@ -1,0 +1,1 @@
+Boxie samlar inte in någon data om dig som användare, allt lagras lokalt eller på iCloud av Apple.

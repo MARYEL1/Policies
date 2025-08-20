@@ -1,0 +1,1 @@
+Boxie does not collect any data about you as a user, everything is stored locally or in iCloud by Apple.
