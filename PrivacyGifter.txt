@@ -1,0 +1,1 @@
+Gifter does not collect any data about you as a user, everything is stored locally.
