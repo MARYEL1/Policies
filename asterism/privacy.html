@@ -2,7 +2,7 @@
 <header class="top wrap"><a class="brand" href="./"><img class="mark-light" src="images/mark.png" alt=""><img class="mark-dark" src="images/mark-dark.png" alt="">Asterism</a><nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a></nav></header>
 <main class="wrap doc">
 <h1>Privacy Policy</h1>
-<p class="meta">Effective November 18, 2026</p>
+<p class="meta">Effective November 19, 2026</p>
 <p class="lede">Asterism does not collect any data about you. There is no account, no analytics, no advertising and no tracking. The developer has no server that receives your library.</p>
 
 <h2>Where your library is stored</h2>
@@ -17,7 +17,15 @@
 <li><strong>The page you save.</strong> When you save a link, Asterism loads that page to read its title, picture and text, as a browser would.</li>
 <li><strong>Public lookups.</strong> To add details such as a cover or a release year, Asterism may look up the link, title or search term with public services such as Open Library, Google Books, Apple's iTunes Search, Apple Maps, YouTube, Spotify and TikTok.</li>
 <li><strong>Services you connect with your own key.</strong> If you add a key or sign in for TMDB, Discogs, IGDB (Twitch), Readwise, Raindrop, Are.na or Pinterest, Asterism talks to that service directly to look up details or import your saved items.</li>
-<li><strong>Cloud AI providers.</strong> If you connect OpenAI or Claude by Anthropic with your own API key, the text and pictures of items being organized are sent to that provider to get suggestions. You can limit the provider to pictures only in Settings.</li>
+<li><strong>Cloud AI providers (OpenAI and Claude by Anthropic).</strong> Off by default. Only if you connect your own OpenAI or Claude account or API key and choose it under Settings → Organizing, Asterism sends the following to that provider for each item it organizes:
+<ul>
+<li>for an image: a small copy of it (at most 640 pixels on the long side, JPEG) and any text read from the image (at most 600 characters);</li>
+<li>for a link or text: the title and the beginning of the text (at most 4,000 characters);</li>
+<li>up to 40 of the tag names already in your library, so that new tags match your existing ones;</li>
+<li>if you wrote one, the short instruction you gave under "Refresh details";</li>
+<li>a fixed instruction that tells the model what to return.</li>
+</ul>
+Asterism does not send the link address, file names, your whole library, or your name or other contact details. Pictures are always sent while a cloud provider is selected. Turn off "Also read text and links" in Settings to send only pictures. Requests to OpenAI ask it not to store them. If a provider is not connected, or you choose "On this device", none of this is sent.</li>
 </ul>
 <p>Each of these services handles what it receives under its own privacy policy. Keys are stored in iCloud Keychain, which is end-to-end encrypted and syncs them only to your own devices. None of them are shared with the developer.</p>
 
